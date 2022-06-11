@@ -73,7 +73,7 @@
             document.getElementById("login").style.color = "#000";
             document.getElementById("svg").style.display = "none";
           } else {
-            document.getElementById("header").style.backgroundColor = "transparent !important";
+            document.getElementById("header").style.backgroundColor = "initial";
             document.getElementById("svg").style.display = "block";
             document.getElementById("header").style.zIndex = "100";
             document.getElementById("login").style.color = "#fff";
@@ -87,7 +87,7 @@
             class="container flex items-center justify-center h-full max-w-6xl px-8 mx-auto sm:justify-between xl:px-0">
 
             <a href="/" class="relative flex items-center inline-block h-5 h-full font-black leading-none">
-                <img class="w-auto h-6 text-indigo-600 fill-current" src="joatelimlogo.png" />
+                <img class="w-auto h-6 text-indigo-600 fill-current" src="joatelimlogo.png" /><span class="ml-2 mt-2 text-black">TERMINAL</span> 
                 <!-- <svg class="w-auto h-6 text-indigo-600 fill-current" viewBox="0 0 194 116"
                     xmlns="http://www.w3.org/2000/svg">
                     <g fill-rule="evenodd">
@@ -199,6 +199,13 @@
         box-sizing: border-box;
         padding: 40px 60px;
       }
+      .swiper-slide {
+          display: flex;
+          flex-direction: column;
+          align-content: center;
+          justify-content: center !important;
+          text-align: left;
+      }
 
       .parallax-bg {
         position: absolute;
@@ -242,11 +249,11 @@
       <div class="swiper-wrapper">
         <div class="px-5 my-5 flex flex-col h-full content-center  swiper-slide">
             <div class="title my-8 w-full" data-swiper-parallax="-300"> <h3 class="max-w-2xl  text-4xl font-black leading-tight text-left text-gray-900 sm:mt-0 sm:px-0 sm:text-6xl">
-              Welcome to Joatelim Limited</h3></div>
-            <div class="subtitle my-2" data-swiper-parallax="-200">Service we provide</div>
+              Welcome to Joatelim Terminal Limited.</h3></div>
+            <!-- <div class="subtitle text-black my-1" data-swiper-parallax="-200">Service we provide</div> -->
             <div class="text" data-swiper-parallax="-100">
-              <p>
-                In need to get parcels, Home and Abroad. Look no further. Contact Joatelim logistics today.
+              <p class="text-black">
+               Joatelim Terminal Logistics is a customer-centric and technology driven company thatprovides professional logistics services. 
               </p>
               <button style="background: #1C0FD7;" class="bg-blue-500 mt-8 hover:bg-gray-100 text-white-800 font-semibold py-3 px-6 rounded shadow">
                  Get Started
@@ -255,11 +262,11 @@
             </div>
             <div class="px-5 my-5 flex flex-col h-full content-center  swiper-slide">
               <div class="title my-8 w-full" data-swiper-parallax="-300"> <h3 class="max-w-2xl  text-4xl font-black leading-tight text-left text-gray-900 sm:mt-0 sm:px-0 sm:text-6xl">
-                Welcome to Joatelim Limited</h3></div>
-              <div class="subtitle my-2" data-swiper-parallax="-200">Service we provide</div>
+                Welcome to Joatelim Terminal Limited</h3></div>
+              <!-- <div class="subtitle my-2" data-swiper-parallax="-200">Service we provide</div> -->
               <div class="text" data-swiper-parallax="-100">
-                <p>
-                  In need to get parcels, Home and Abroad. Look no further. Contact Joatelim logistics today.
+                <p class="text-black">
+                    We are a customer-oriented logistics company with core competence in courier delivery service and haulage handling.
                 </p>
                 <button style="background: #1C0FD7;" class="bg-blue-500 mt-8 hover:bg-gray-100 text-white-800 font-semibold py-3 px-6 rounded shadow">
                     Get Started
@@ -369,10 +376,14 @@
     </div>
     <!-- HERO SECTION END -->
 
+
+
+<!---ABOUT US SECTION-->
+
     <!-- BEGIN FEATURES SECTION -->
     <div id="features" class="relative w-full px-8 py-10 border-t border-gray-200 md:py-16 lg:py-24 xl:py-40 xl:px-0">
         <div class="container flex flex-col items-center justify-between h-full max-w-6xl mx-auto">
-            <h2 class="my-5 text-base font-medium tracking-tight text-indigo-500 uppercase">Our Features</h2>
+            <h2 class="my-5 text-base font-medium tracking-tight text-indigo-500 uppercase">Our Services</h2>
             <h3
                 class="max-w-2xl px-5 mt-2 text-3xl font-black leading-tight text-center text-gray-900 sm:mt-0 sm:px-0 sm:text-6xl">
                 Built and Designed with you in Mind</h3>
@@ -896,12 +907,12 @@
 
     <footer class="px-4 pt-12 pb-8 text-white bg-white border-t border-gray-200">
         <div class="container flex flex-col justify-between max-w-6xl px-4 mx-auto overflow-hidden lg:flex-row">
-            <div class="w-full pl-12 mr-4 text-left lg:w-1/4 sm:text-center sm:pl-0 lg:text-left">
+            <div class="w-full pl-12 mr-4 text-left lg:w-1/5 sm:text-center sm:pl-0 lg:text-left">
                 <a href="/"
                     class="flex justify-start block text-left sm:text-center lg:text-left sm:justify-center lg:justify-start">
                     <img src="joatelimlogo.png" />
                 </a>
-                <p class="mt-6 mr-4 text-base text-gray-500">We provide fast deleveries to your parcels, goods!
+                <p class="mt-6 mr-4 text-base text-gray-500">We are a customer-oriented logistics company with core competence in courier delivery service and haulage handling.
                 </p>
             </div>
             <div class="block w-full pl-10 mt-6 text-sm lg:w-3/4 sm:flex lg:mt-0">
