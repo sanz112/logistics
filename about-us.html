@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+  />
+  <!-- Link Swiper's CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+    <title>Welcome to Joatelim</title>
+    <!--
+        For more customization options, we would advise
+        you to build your TailwindCSS from the source.
+        https://tailwindcss.com/docs/installation
+    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"/>
+        
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.9.2/tailwind.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.min.css" /> -->
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+          }
+        }
+      }
+    </script>
+    <!-- Small CSS to Hide elements at 1520px size -->
+    <style>
+        @media(max-width:1520px) {
+            .left-svg {
+                display: none;
+            }
+        }
+
+        /* small css for the mobile nav close */
+        #nav-mobile-btn.close span:first-child {
+            transform: rotate(45deg);
+            top: 4px;
+            position: relative;
+            background: #a0aec0;
+        }
+
+        #nav-mobile-btn.close span:nth-child(2) {
+            transform: rotate(-45deg);
+            margin-top: 0px;
+            background: #a0aec0;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden antialiased md:subpixel-antialiased">
+
+    <script>
+        // When the user scrolls down 50px from the top of the document, resize the header's font size
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            document.getElementById("header").style.backgroundColor = "#fff";
+            }
+
+        }
+
+    </script>
+
+<header id="header" class="relative sticky mt-0 top-0 z-50 w-full">
+    <div class="mt-0 top-0 left-0 w-full">
+      <div class="relative py-6 px-4 sm:px-6 lg:px-8">
+        <nav class="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
+          <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
+            <div class="flex items-center justify-between w-full md:w-auto">
+              <a href="#">
+                <span class="sr-only">Workflow</span>
+                <div class="my-auto">
+                    <img class="w-auto h-6 text-indigo-600 fill-current" src="joatelimlogo.png" /><span class="ml-2 text-black">TERMINAL</span>
+                  </div>
+              </a>
+              <div id="nav-mobile-btn"
+              class="absolute -mr-2 top-0 right-0 z-50 block w-6 mr-3 mt-2 cursor-pointer select-none md:hidden">
+              <span class="block w-full h-1 mt-2 duration-200 transform bg-gray-800 rounded-full sm:mt-1"></span>
+              <span class="block w-full h-1 mt-1 duration-200 transform bg-gray-800 rounded-full"></span>
+          </div>
+            </div>
+          </div>
+          <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
+            <a href="#about-us" class="font-medium text-gray-500 hover:text-gray-900">About-Us</a>
+
+            <a href="#features" class="font-medium text-gray-500 hover:text-gray-900">Features</a>
+
+            <a href="#services" class="font-medium text-gray-500 hover:text-gray-900">Services</a>
+
+            <a href="#team" class="font-medium text-gray-500 hover:text-gray-900">Team</a>
+
+            <a href="#learn_more" class="font-medium text-indigo-600 hover:text-indigo-500"><button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+                <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                    Learn More
+                </span>
+              </button></a>
+          </div>
+        </nav>
+      </div>
+
+      <!--
+        Mobile menu, show/hide based on menu open state.
+
+        Entering: "duration-150 ease-out"
+          From: "opacity-0 scale-95"
+          To: "opacity-100 scale-100"
+        Leaving: "duration-100 ease-in"
+          From: "opacity-100 scale-100"
+          To: "opacity-0 scale-95"
+      -->
+        <style>
+    @media(max-width:1520px) {
+        .left-svg {
+            display: none;
+        }
+    }
+
+    /* small css for the mobile nav close */
+    #nav-mobile-btn.close span:first-child {
+        transform: rotate(45deg);
+        top: 4px;
+        position: relative;
+        background: #a0aec0;
+    }
+
+    #nav-mobile-btn.close span:nth-child(2) {
+        transform: rotate(-45deg);
+        margin-top: 0px;
+        background: #a0aec0;
+    }
+    /* nav#nav {
+        position: fixed !important;
+        /* top: 0; */
+        /* background-position: top; 
+    } */
+</style>
+
+<nav id="nav" class="hidden">
+
+<div class="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+<div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
+  <div class="px-5 pt-4 flex items-center justify-between">
+    <div>
+        <div class="my-auto">
+            <img class="w-auto h-6 text-indigo-600 fill-current" src="joatelimlogo.png" /><span class="ml-2 text-black">TERMINAL</span>
+          </div>
+    </div>
+    
+</div>
+  <div class="px-2 pt-2 pb-3 space-y-1">
+    <a href="#about-us" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">About-Us</a>
+
+    <a href="#features" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Features</a>
+
+    <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Services</a>
+
+    <a href="#team" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Team</a>
+  </div>
+  <a href="#" class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100"> Learn More</a>
+</div>
+</div>
+</nav>
+</div>
+</header>
+
+<section class="hero">
+    <img src="./cont.jpg" alt="houses on the water" class="w-full" />
+    <div
+      class="heading-container font-black absolute flex justify-center items-center w-full">
+      <h1 class="text-5xl text-white">Get Your container deliver to your location </h1><br>
+     
+    </div>
+    <div class="heading-container font-black absolute mt-32 flex justify-center items-center w-full">
+        <a href="#about-us"><button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-4 px-8 border-b-4 border-blue-700 hover:border-blue-500 rounded">
+          Learn More
+        </button></a>
+        </div>
+  </section>
+
+  <style>
+      .hero img {
+  height: 90vh;
+  background-size: cover;
+}
+
+.heading-container {
+  height: 90vh;
+   top: 0%;
+  /* right: 100%; 
+  left: -25%; */
+}
+  </style>
+
+
+<!-- <section>
+<div style="width: 100%;" class="  mt-3 mb-4">
+<div class="h-full">
+    <img class="h-full" width="100%" src="./cont.jpg" />
+</div>
+  </div>
+</section> -->
+
+
+<section id="about-us" >
+    <div class="relative w-full px-4 py-4 pt-0 border-t border-gray-200 md:py-4 lg:py-6 xl:py-8 xl:px-0">
+        <div class="container flex flex-col items-center justify-between h-full max-w-6xl mx-auto">
+            <div class="flex flex-col w-full lg:flex-row sm:mt-15 lg:mt-20">
+            <div class="w-full flex flex-col items-center justify-center max-w-md p-4 mx-auto mb-0 sm:mb-16 lg:mb-0">
+                <img src="./container.jpg" />
+                <!-- <div class="flex flex-row"> -->
+                    <div class="mx-auto mt-4">
+                <div id="mission" class="my-4 text-left flex flex-col">
+                    <h3 class="font-black text-indigo-600">Mission Statement</h3>
+                    <p>Our mission is to provide unique and excellent professional shipping and logistics services that  are tailored  towards  the  needs  of  our clients  in a manner  that  gives  value  for  money. </p>
+                </div>
+                </div>
+                <!-- <div id="vision">
+                    <h3>Vision</h3>
+                </div> -->
+            <!-- </div> -->
+            </div>
+
+
+            <div class="w-full max-w-md p-4 mx-auto mb-0 sm:mb-16 lg:mb-0">
+                <h2 class="max-w-2xl px-0 mt-2 text-2xl font-black leading-tight text-gray-900 sm:mt-0 sm:px-0 sm:text-6xl text-md ext-medium mt-4 my-4">About Us!</h2>
+                <p>The Company was established in March 2012, as a result of the Port Reforms initiated by the Nigerian  Government,  with  the  aim  to  provide  a  high  standard  logistics  service  to  Port users  and  Port Terminal  Operators.
+
+                    JOATELIM LOGISTICS LIMITED offers its services for shipments by air and sea including logistics  for  Customs  formalities  and  handles  transportation  for  all  your  imports  to  and exports from  Nigeria.  Our  principal  areas  of  activity  are  shipping  agency,  empty  container holding-bay, import, export, haulage, warehousing and plant service. JOATELIM LOGISTICS LIMITED  is  able  to  ensure  that  it remains  at  the  heart  of  the  Nigerian  shipping  industry. It has since become one of the most advantageous holding-bay operator that directly located close  to  the port  with  90% capacity  above other empty  container holding  —bay  in  Lagos, Nigeria
+                    
+                    
+                    We  have  good  working  relationship  with  the  national  and  international  communities  and our  Company have  properly  positioned  itself  to  meet  the  challenges  of  the  industry.  The Company  identifies  customers' needs,  review  services  and  make  value-adding  contribution to  clients  businesses.
+                                        
+            </div>
+
+        </div>
+
+
+    </div>
+    </div>
+
+</section>
+
+
+
+<script>
+    if (document.getElementById('nav-mobile-btn')) {
+        document.getElementById('nav-mobile-btn').addEventListener('click', function () {
+            if (this.classList.contains('close')) {
+                document.getElementById('nav').classList.add('hidden');
+                this.classList.remove('close');
+            } else {
+                document.getElementById('nav').classList.remove('hidden');
+                this.classList.add('close');
+            }
+        });
+    }
+</script>
+
+</body>
+</html>
