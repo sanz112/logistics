@@ -11,6 +11,7 @@
     rel="stylesheet"
     href="https://unpkg.com/swiper/swiper-bundle.min.css"
   />
+  <link rel="stylesheet" href="joa.css">
     <title>Welcome to Joatelim</title>
     <!--
         For more customization options, we would advise
@@ -274,8 +275,8 @@
 
 
 <section>
-    <div class="flex items-center my-10 py-4 justify-center">
-    <a href="#learn_more" class="font-medium text-indigo-600 hover:text-indigo-500"><button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+    <div class="flex items-center my-8 py-3 justify-center">
+    <a href="./logistic.html" class="font-medium text-indigo-600 hover:text-indigo-500"><button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
         <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
             Check More of our other Services
         </span>
@@ -283,25 +284,30 @@
     </div>
 </section>
 
-
-
-<section>
-    <div class="bg-indigo-200 h-full py-5">
-    <div class="p-6 container mb-10 md:w-2/3 xl:w-auto mx-auto flex flex-col xl:items-stretch justify-between xl:flex-row">
-        <div class="xl:w-1/2 md:mb-14 xl:mb-0 relative h-auto flex items-center justify-center">
-            <img src="https://cdn.tuk.dev/assets/components/26May-update/newsletter-1.png" alt="Envelope with a newsletter" role="img" class="h-full xl:w-full lg:w-1/2 w-full" />
-        </div>
-        <div class="w-full xl:w-1/2 xl:pl-40 xl:py-28">
-            <h1 class="text-2xl md:text-4xl xl:text-5xl font-bold leading-10 text-gray-800 dark:text-white mb-4 text-center xl:text-left md:mt-0 mt-4">Subscribe</h1>
-            <p class="text-base leading-normal text-gray-600 dark:text-gray-200 text-center xl:text-left">Kindly Subscribe to our Newsletter to receive latest updates on our offers and services</p>
-            <div class="flex items-stretch mt-12">
-                <input class="bg-gray-100 rounded-lg rounded-r-none dark:bg-gray-800 text-base leading-none text-gray-800 dark:text-white p-5 w-4/5 border border-transparent focus:outline-none focus:border-gray-500" type="email" placeholder="Your Email" />
-                <button class="w-32 rounded-l-none hover:bg-indigo-600 bg-indigo-700 rounded text-base font-medium leading-none text-white p-5 uppercase focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700">Subscribe</button>
+<section id="contact" class="subscribe-section mx-auto py-24 border-t border-gray-200">
+    <div class="container flex items-center mx-auto">
+      <div class="subscribe-wrapper bg-no-repeat mx-auto  bg-center bg-cover rounded-3xl py-20  px-10 md:px-13" style="background-image: url('bg.svg');">
+        <div class="row flex flex-col mx-auto items-center lg:flex-row">
+          <div class="w-full lg:w-7/12 xl:w-6/12">
+            <div class="section-title mb-4">
+              <h1 class="text-white lg:text-left text-center text-4xl font-medium font-black mb-6">Subscribe Our Newsletter</h1>
+              <p class="text-white pr-5">Subscribe to our Newsletters to learn more about latest updates and offers</p>
             </div>
+          </div>
+          <div class="w-full lg:w-5/12 xl:w-6/12">
+            <form action="#" class="subscribe-form relative mb-4">
+              <input type="email" name="subs-email" id="subs-email" placeholder="Your Email Address" class="w-full py-5 px-8 rounded-2xl bg-white text-body-color border solid border-transparent transition duration-300 focus:shadow-xl">
+              <div class="flex items-center justify-center">
+              <button type="submit" class="main-btnbg-sky-800 hover:bg-sky-600 hover:text-blueviolet-600 btn-hover">Subscribe</button>
+            </div>
+            </form>
+          </div>
         </div>
+      </div>
     </div>
-    </div>
-</section>
+  </section>
+  
+  
 
 
 <script>

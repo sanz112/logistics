@@ -1,0 +1,69 @@
+.subscribe-form .main-btn {
+    border-radius: 1rem;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+  }
+  
+  @media (max-width: 575px) {
+    .subscribe-form .main-btn {
+      --tw-bg-opacity: 1;
+      background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+      margin-top: 20px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      padding-left: 36px;
+      padding-right: 36px;
+      position: static;
+      --tw-text-opacity: 1;
+      /* color: rgba(88, 100, 255, var(--tw-text-opacity)); */
+      color:blueviolet;
+    }
+  
+    .subscribe-form .main-btn.btn-hover {
+      position: relative;
+    }
+  }
+  
+  
+  .main-btn {
+    --tw-bg-opacity: 1;
+    background-color: rgba(88, 100, 255, var(--tw-bg-opacity));
+    border-radius: 9999px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 700;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    --tw-text-opacity: 1;
+    color: rgba(255, 255, 255, var(--tw-text-opacity));
+    z-index: 10;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    transition-duration: 300ms;
+    padding: 18px 38px;
+    font-size: 18px;
+  }
+  
+  .main-btn:hover {
+    --tw-text-opacity: 1;
+    background-color: blueviolet;
+    color: rgba(255, 255, 255, var(--tw-text-opacity));
+  }
+  
+  .btn-hover {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .text-white{
+    --tw-text-opacity: 1;
+    color: rgba(255, 255, 255, var(--tw-text-opacity));
+  }
+  
